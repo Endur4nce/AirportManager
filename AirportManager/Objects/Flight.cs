@@ -6,7 +6,7 @@ namespace AirportManager.Objects
     [Table(Name = "Flight")]
     public class Flight
     {
-        [Column(Name = "id", IsPrimaryKey = true)]
+        [PrimaryKey]
         public int Id { get; set; }
 
         [Column(Name = "airport_id")]
